@@ -1,0 +1,214 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+body {
+    font-family: 'Lato',sans-serif;
+}
+header {
+    height: 80px;
+    border-bottom: 1px solid #c6c6c6;
+}
+header nav ul {
+    display:flex;
+    justify-content: space-between;
+}
+.nav-item-1 img {
+    margin-left: 10px;
+}
+.nav-item-1 a {
+    text-decoration: none;
+    color: black;
+    /* margin-right: 40px; */
+    /* display: block; */
+    /* display:block; */
+}
+.nav-item-1 img {
+    width: 80px;
+}
+.nav-item-2 input {
+    width: 550px;
+    height: 30px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #babab9;
+    margin-top: 30px;
+
+}
+
+.nav-item-3 {
+    list-style: none;
+ 
+}
+.nav-item-3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.nav-item-3 img {
+    border-radius: 50%;
+    width: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.container {
+    display:grid;
+    /* grid-template-columns: repeat(3, minmax(300px,400px));
+    grid-template-rows: repeat(6,400px); */
+    grid-template-columns: [inicio]1fr [linea2]1fr [linea3]1fr [linea4]1fr [linea5]1fr [linea6]1fr [linea7]1fr [linea8]1fr [linea9]1fr[final];
+    grid-template-rows: [inicio]30px [linea2]356px [linea3]30px [linea4]356px [linea5]30px [linea6]356px [linea7]30px [linea8]356px[final]; 
+    /* grid-template: repeat(8, minmax(100px ,200px)) / repeat(9, minmax(100px,250px)); */
+    grid-gap: 10px;
+    height: 100vh;
+}
+/* Titulo 1 */
+.item:nth-of-type(1) {
+    grid-column: linea2 / final;
+}
+.item:nth-of-type(2) {
+    grid-column: linea2 / span 2 ;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(3) {
+    grid-column: linea4 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(4) {
+    grid-column: linea6 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(5) {
+    grid-column: linea8 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Titulo 2 */
+.item:nth-of-type(6) {
+    grid-column: linea2 / final;
+}
+.item:nth-of-type(7) {
+    grid-column: linea2 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(8) {
+    grid-column: linea4 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(9) {                                                                               
+    grid-column: linea6 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(10) {
+    grid-column: linea8 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*  Titulo 3 */
+.item:nth-of-type(11) {
+    grid-column: linea2 / final ;
+}
+.item:nth-of-type(12) {
+    grid-column: linea2 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(13) {
+    grid-column: linea4 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(14) {
+    grid-column: linea6 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(15) {
+    grid-column: linea8 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*  Titulo 4 */
+.item:nth-of-type(16) {
+    grid-column: linea2 / final;
+}
+.item:nth-of-type(17) {
+    grid-column: linea2 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(18) {
+    grid-column: linea4 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(19) {
+    grid-column: linea6 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.item:nth-of-type(20) {
+    grid-column: linea8 / span 2;
+    background-image: url('https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Aside */
+.item:nth-of-type(21) {
+    grid-column: inicio / linea2;
+    grid-row: inicio / final;
+}
+
+.title{
+    font-size: 21px;
+    font-weight: 700;
+}
+.aside {
+    background-color:#fe5e60;
+    border-radius: 7px;
+    text-align: center;
+}
+.aside a {
+    text-decoration: none;
+    color: white;
+}
+.aside p {
+    margin: 5px 0 15px 0;
+}
+
+.pelicula {
+    border-radius: 10px;
+}
+.settings {
+    margin-top: 1270px;
+}
+@media screen and (max-width: 768px) {
+    .container { 
+        grid-gap: 3px;
+    }
+}
